@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Signika', Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
