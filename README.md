@@ -60,3 +60,4 @@
 - [ ] add a `new to react and redux and flux and other stuff` wiki for centralized training materials
 - [ ] explore possibility of adding [nightwatch.js](http://nightwatchjs.org/) for end-to-end tests
 - [ ] update to webpack v2
+- [ ] fix mocha output, which is only showing last run test result

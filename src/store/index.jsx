@@ -1,4 +1,4 @@
-import configureStore from 'utils/configureStore';
+import configureStore from './configureStore';
 
 const store = configureStore();
 

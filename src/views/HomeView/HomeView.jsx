@@ -2,12 +2,15 @@
 
 import React from 'react';
 
+import HelloContainer from 'containers/HelloContainer';
+
 import styles from './styles.css';
 
 const HomeView = () => {
   return (
     <div className={styles.container}>
-      Welcome To The App!
+
+      <HelloContainer />
     </div>
   );
 };
