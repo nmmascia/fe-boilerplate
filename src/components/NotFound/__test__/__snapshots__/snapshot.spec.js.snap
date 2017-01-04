@@ -1,0 +1,11 @@
+exports[`test renders default text 1`] = `
+<div>
+  Not found!
+</div>
+`;
+
+exports[`test renders prop text 1`] = `
+<div>
+  Not Found!!
+</div>
+`;
