@@ -32,7 +32,7 @@
 * [postcss](https://github.com/postcss/postcss) - css preprocessor
 
 ##### unit testing
-* [mocha](https://mochajs.org/) - mocha test framework
+* [jest](https://facebook.github.io/jest/) - jest test framework
 * [enzyme](https://github.com/airbnb/enzyme) - unit test utilities for react
 
 ##### linting and type annotations
@@ -56,8 +56,4 @@
 ## boilerplate todos
 - [x] add `webpack.config.prod.js` to `cfg` directory
 - [ ] add [documentation.js](https://github.com/documentationjs/documentation) to generate docs from flow annotations or JSDoc annotations
-- [ ] add [istanbul.js](https://github.com/gotwarlost/istanbul) for code coverage reports (might require karma test runner?)
-- [ ] add a `new to react and redux and flux and other stuff` wiki for centralized training materials
-- [ ] explore possibility of adding [nightwatch.js](http://nightwatchjs.org/) for end-to-end tests
 - [ ] update to webpack v2
-- [ ] fix mocha output, which is only showing last run test result
