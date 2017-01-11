@@ -1,14 +1,18 @@
 const path = require('path');
 const webpack = require('webpack');
+
 const autoprefixer = require('autoprefixer');
 const precss = require('precss');
+const cssValues = require('postcss-modules-values');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const dir = path.resolve('.');
 const src = path.join(dir, 'src');
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'sourcemap',
+  progress: true,
   entry: [
     'babel-polyfill',
     './src/index',
@@ -63,6 +67,7 @@ module.exports = {
       return [
         autoprefixer,
         precss,
+        cssValues,
       ];
     },
   },
@@ -71,6 +76,4 @@ module.exports = {
     modulesDirectories: ['node_modules'],
     root: src,
   },
-  progress: true,
 };
-

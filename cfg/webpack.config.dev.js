@@ -1,13 +1,15 @@
 const path = require('path');
 const webpack = require('webpack');
+
 const autoprefixer = require('autoprefixer');
 const precss = require('precss');
+const cssValues = require('postcss-modules-values');
 
 const dir = path.resolve('.');
 const src = path.join(dir, 'src');
 
 module.exports = {
-  devtool: 'cheap-eval-source-map',
+  devtool: 'sourcemap',
   entry: [
     'react-hot-loader/patch',
     'babel-polyfill',
@@ -44,7 +46,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|mp3|wav|ogg)$/,
-        loader: 'file-loader',
+        loader: 'url-loader',
         include: src,
       },
       {
@@ -57,6 +59,7 @@ module.exports = {
       return [
         autoprefixer,
         precss,
+        cssValues,
       ];
     },
   },
@@ -72,4 +75,3 @@ module.exports = {
     'react/lib/ReactContext': true,
   },
 };
-
